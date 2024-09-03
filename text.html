@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aviso</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        .container {
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            margin: 0;
+            font-size: 24px;
+            color: #333;
+        }
+        p {
+            font-size: 20px;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div id="app"></div>
+    <script>
+        // Criando o conteúdo da página dinamicamente usando JavaScript
+        const app = document.getElementById('app');
+
+        const container = document.createElement('div');
+        container.className = 'container';
+
+        const message = document.createElement('h1');
+        message.textContent = 'Não adicione esse número no WhatsApp⬇️';
+
+        const phoneNumber = document.createElement('p');
+        phoneNumber.textContent = 'Número de telefone';
+
+        container.appendChild(message);
+        container.appendChild(phoneNumber);
+        app.appendChild(container);
+    </script>
+</body>
+</html>
